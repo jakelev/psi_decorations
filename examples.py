@@ -152,7 +152,7 @@ def test_all(num_points, print_stats=False, print_conclusions=True, skip_until=0
 
     print(f'\nTesting all possible psi class products with n={num_points} marked points'  
           f'\nand color multiplicities sorted in descending order, but no other constraints.')
-    N = _count_tests(num_points, print_conclusions=False) # preparatory: count the number of tests to do
+    N = _count_tests(num_points) # preparatory: count the number of tests to do
     print(f'\nThis will test a total of {N} different sets of MismatchedDecorations.', end='')
 
     cc_count = 0
